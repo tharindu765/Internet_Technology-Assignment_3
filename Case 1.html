@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case 1</title>
+    <style>
+        section{
+        width:50vw;
+        height:50vh;
+        position:absolute;
+        }
+
+        section:first-child{
+        background:red;
+        top:0;
+        left:0;
+        }
+
+        section:nth-child(2){
+        background:cyan;
+        top:0;
+        right:0;
+        }
+
+        section:nth-child(3){
+        background:yellow;
+        right:0;
+        bottom:0;
+        }
+
+        section:nth-child(4){
+        background:blue;
+        left:0;
+        bottom:0;
+        }
+
+        section>div{
+        width:15vw;
+        height:15vw;
+        background:white;
+        border-radius:100%;
+        position:absolute;
+        margin:auto;
+        left:0;
+        bottom:0;
+        right:0;
+        top:0;
+        }
+
+        section>div>div{
+        width:5vw;
+        height:5vw;
+        background:red;
+        position:absolute;
+        margin:auto;
+        left:0;
+        bottom:0;
+        right:0;
+        top:0;
+        }
+
+        #middle{
+        width:10vw;
+        height:10vw;
+        position:absolute;
+        background:white;
+        margin:auto;
+        left:0;
+        right:0;
+        bottom:0;
+        top:0;
+        }
+
+        #middle>div{
+        width:5vw;
+        height:5vw;
+        position:absolute;
+        border-radius:100%;
+        background:red;
+        margin:auto;
+        left:0;
+        right:0;
+        bottom:0;
+        top:0;
+        }
+
+        .corner{
+        width:15vw;
+        height:15vw;
+        position:absolute;
+        background:white;
+        border-radius:100%;
+        }
+
+        #corner1{
+        top:calc(-15vw/2);
+        left: calc(-15vw/2);
+        }
+
+        #corner2{
+        top:calc(-15vw/2);
+        right: calc(-15vw/2);
+        }
+
+        #corner3{
+        bottom:calc(-15vw/2);
+        right: calc(-15vw/2);
+        }
+
+        #corner4{
+        bottom:calc(-15vw/2);
+        left: calc(-15vw/2);
+        }
+
+        #corner5{
+        bottom:calc(-15vw/2);
+        right: calc(-15vw/2);
+        left: calc(-15vw/2);
+        margin:auto;
+        }
+
+        #corner6{
+        top:calc(-15vw/2);
+        right: calc(-15vw/2);
+        left: calc(-15vw/2);
+        margin:auto;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div><div></div></div>
+</section>
+<section>
+    <div><div></div></div>
+</section>
+<section>
+    <div><div></div></div>
+</section>
+<section>
+    <div><div></div></div>
+</section>
+
+<div id="middle"><div></div></div>
+
+<div id="corner1" class="corner"></div>
+<div id="corner2" class="corner"></div>
+<div id="corner3" class="corner"></div>
+<div id="corner4" class="corner"></div>
+<div id="corner5" class="corner"></div>
+<div id="corner6" class="corner"></div>
+
+
+
+</body>
+</html>
